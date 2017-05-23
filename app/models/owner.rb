@@ -1,5 +1,5 @@
 class Owner < ActiveRecord::Base
-  has_many :pets, dependent: :destroy
+  has_many :pets
 
   # TODO: add association to appointments (through pets)
 

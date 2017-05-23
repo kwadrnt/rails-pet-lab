@@ -3,6 +3,7 @@ class CreatePets < ActiveRecord::Migration[5.0]
     create_table :pets do |t|
       t.string :name
       t.string :breed
+      t.references :owner
 
       t.timestamps null: false
     end
