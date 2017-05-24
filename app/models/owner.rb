@@ -1,6 +1,7 @@
 class Owner < ActiveRecord::Base
   # TODO: add association ot pets
   has_many :pets, dependent: :destroy
+  has_secure_password
 
   # TODO: add association to appointments (through pets)
 
