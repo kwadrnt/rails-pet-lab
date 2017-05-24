@@ -4,4 +4,7 @@ Rails.application.routes.draw do
 
   resources :owners
 
+  get '/signup' => 'owners#new'
+  post '/owners' => 'owners#create'
+
 end
