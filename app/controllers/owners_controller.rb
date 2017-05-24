@@ -1,5 +1,7 @@
 class OwnersController < ApplicationController
 
+  before_action :authorize, except:[:new, :create]
+
   def index
     @owners = Owner.all
   end
