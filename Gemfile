@@ -20,7 +20,8 @@ gem 'sdoc', '>= 0.4.0', group: :doc
 
 # Access an IRB console on exception pages or by using <%= console %> in views
 gem 'web-console', '>= 2.0', group: :development
-
+# bcrypt
+gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
   gem 'rspec-rails'
